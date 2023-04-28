@@ -2929,12 +2929,12 @@ EXP_ST void init_forkserver(char** argv) {
 
     if (out_file) {
 
-      dup2(dev_null_fd, 0);
+      // dup2(dev_null_fd, 0);
 
     } else {
 
-      dup2(out_fd, 0);
-      close(out_fd);
+      // dup2(out_fd, 0);
+      // close(out_fd);
 
     }
 
